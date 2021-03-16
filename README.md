@@ -1,6 +1,8 @@
 # DVA400_industrial_robotics
 # Industrial robotics at Mälardalen University(2021)
 
+![Puma 560](./robot.PNG]
+
 ### Try to create a branch instead of updating the master branch directly
 
 ### Add other respositories by adding subfolders
