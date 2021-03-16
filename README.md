@@ -1,7 +1,7 @@
 # DVA400_industrial_robotics
 # Industrial robotics at Mälardalen University(2021)
 
-![ABB](./robot.png)
+![ABB](./robot.PNG)
 
 ### Try to create a branch instead of updating the master branch directly
 
