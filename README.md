@@ -1,7 +1,7 @@
 # DVA400_industrial_robotics
 # Industrial robotics at Mälardalen University(2021)
 
-![Puma 560](./robot.PNG)
+![Puma 560](./robot.PNG =250x)
 
 ### Try to create a branch instead of updating the master branch directly
 
