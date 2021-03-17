@@ -15,23 +15,14 @@ Time variables:
 -	t_m: generic intermediate time 
  %}
  
- 
-%returns symbolic expression if input is symbolic, if values are inputted
-%then the position q is returned at time t_m
+% symbols for cubic polynomial
+syms qi dqi qf dqf qm t_i t_f t_m t;
 
-syms qi dqi ddqi qf dqf ddqf qm t_m t_i t_f;
+% get symbolic polynomial
+q = poly_trajD3(qi, qf, dqi, dqf, qm, t_i, t_f, t_m, t);
+%substitute the symbolic variables for real values
+qs = subs(q, [qi qf qm dqi dqf t_i t_f t_m], [0 10 1 0 0 0 10 5]);
 
-qi = 1;
-qf = 5;
-dqi = 0
-dqf = 0
-t_i=0;
-t_f=10;
-
-for i = 0:10
-q = poly_trajD3(qi, qf, dqi, dqf, t_i, t_f, i)
-
-end
 
 
  
@@ -62,6 +53,17 @@ Time variables:
 -	t_i: initial time 
 -	t_f: final time 
  %}
+
+
+% symbols for cubic polynomial
+syms qi qf dqi dqf ddqi ddqf q_m t_i t_f t_m
+
+% get symbolic polynomial
+q = poly_trajD5(qi, qf ,dqi ,dqf ,ddqi ,ddqf, t_i, t_f, t);
+
+%substitute the symbolic variables for real values
+qs = subs(q, [qi qf dqi dqf ddqi ddqf t_i t_f], [0 10 0 0 0 10 0 10]);
+
 
 %Assignment 2.2: 
 %{
