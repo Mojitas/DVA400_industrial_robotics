@@ -24,7 +24,7 @@ syms qi dqi qf dqf qm t_i t_f t_m t;
 q = poly_trajD4(qi, qf, dqi, dqf, qm, t_i, t_f, t_m, t); % comments on 4 degree. 
 % Substitute the symbolic variables for real values
 qs = subs(q, [qi qf dqi dqf qm t_i t_f t_m], [0 0 0 0 3 0 10 3]);
-
+ 
 %%
 %Assignment 1.2
 %{
