@@ -1,7 +1,7 @@
  %Assignment 1.1
 %{
 Obtain the symbolic expression of a polynomial that envisages the following symbolic variables:
-
+ hi mathias. 
 Value variables: 
 -	q_i: initial value (i.e., value at t_i) 
 -	dq_i: derivative at initial value (i.e., at time t_i) 
