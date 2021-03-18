@@ -15,13 +15,13 @@ Time variables:
 -	t_m: generic intermediate time 
  %}
  
-% symbols for cubic polynomial
+% Initialize symbolics variables for cubic polynomial
 syms qi dqi qf dqf qm t_i t_f t_m t;
 
 % get symbolic polynomial
 q = poly_trajD4(qi, qf, dqi, dqf, qm, t_i, t_f, t_m, t);
 %substitute the symbolic variables for real values
-qs = subs(q, [qi qf qm dqi dqf t_i t_f t_m], [0 10 1 0 0 0 10 5])
+qs = subs(q, [qi qf qm dqi dqf t_i t_f t_m], [0 10 1 0 0 0 10 3])
 
 
 
