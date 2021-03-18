@@ -1,4 +1,4 @@
-function[q] = poly_trajD3(qi, dqi, qf, dqf, qm, t_i, t_f, t_m, t)
+function[q] = poly_trajD4(qi, dqi, qf, dqf, qm, t_i, t_f, t_m, t)
 %makes polynomial from inputs
 
 v = [qi dqi qf dqf qm]';
