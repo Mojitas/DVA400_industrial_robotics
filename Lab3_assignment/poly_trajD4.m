@@ -1,6 +1,7 @@
 function[q] = poly_trajD4(qi, dqi, qf, dqf, qm, t_i, t_f, t_m, t)
 %makes polynomial from inputs
 
+
 v = [qi dqi qf dqf qm]';
 
 A = [1 t_i t_i^2 t_i^3 t_i^4;
