@@ -1,4 +1,4 @@
- %Assignment 1.1
+%% Assignment 1.1
 %{
 Obtain the symbolic expression of a polynomial that envisages the following symbolic variables:
 
@@ -19,7 +19,7 @@ Time variables:
 syms qi dqi qf dqf qm t_i t_f t_m t;
 
 % get symbolic polynomial
-q = poly_trajD3(qi, qf, dqi, dqf, qm, t_i, t_f, t_m, t);
+q = poly_trajD4(qi, qf, dqi, dqf, qm, t_i, t_f, t_m, t);
 %substitute the symbolic variables for real values
 qs = subs(q, [qi qf qm dqi dqf t_i t_f t_m], [0 10 1 0 0 0 10 5])
 
@@ -61,8 +61,11 @@ syms qi qf dqi dqf ddqi ddqf t_i t_f
 % get symbolic polynomial
 q = poly_trajD5(qi, qf ,dqi ,dqf ,ddqi ,ddqf, t_i, t_f, t);
 
+T = t_f - t_i;
+tau = t-t_i/T;
+
 %substitute the symbolic variables for real values
-qs = subs(q, [qi qf dqi dqf ddqi ddqf t_i t_f], [0 10 0 0 0 0 0 10])
+qs = subs(q, [dqi dqf ddqi ddqf], [0 0 0 0])
 
 
 %Assignment 2.2: 
