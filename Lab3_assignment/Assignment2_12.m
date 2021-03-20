@@ -1,7 +1,7 @@
 %==========================================================================
-% File: Assignment 2_1 + Assignment 2_2
+% File: Assignment 1_1
 % Author: Mathias Strand, Luca Grossetti     Date: 2021/03     Ver: 1.0
-% Mälardalens Högskola - Course in Industrial Robotics
+% Mälardalens Högskola - DVA400 Industrial Robotics
 %==========================================================================
 %
 % Assignment 2.1

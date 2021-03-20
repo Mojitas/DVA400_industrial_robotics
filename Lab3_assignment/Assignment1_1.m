@@ -1,7 +1,7 @@
 %==========================================================================
 % File: Assignment 1_1
 % Author: Mathias Strand, Luca Grossetti     Date: 2021/03     Ver: 1.0
-% Mälardalens Högskola - Course in Industrial Robotics
+% Mälardalens Högskola - DVA400 Industrial Robotics
 %==========================================================================
 %
 % Goal: Obtain the symbolic expression of a polynomial that envisages the 
@@ -33,4 +33,4 @@ syms qi dqi qf dqf qm t_i t_f t_m t;
 % Get symbolic polynomial 
 q = poly_trajD4(qi, qf, dqi, dqf, qm, t_i, t_f, t_m, t);  
 % Substitute the symbolic variables for real values
-qs = subs(q, [qi qf dqi dqf qm t_i t_f t_m], [0 0 0 0 3 0 10 3]);
+qs = subs(q, [qi qf dqi dqf qm t_i t_f t_m], [0 0 0 0 3 0 10 3])

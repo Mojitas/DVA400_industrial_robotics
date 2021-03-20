@@ -1,7 +1,9 @@
-
-
-
-%% Assignment 1.1
+%==========================================================================
+% File: Assignment 1_1
+% Author: Mathias Strand, Luca Grossetti     Date: 2021/03     Ver: 1.0
+% Mälardalens Högskola - DVA400 Industrial Robotics
+%==========================================================================
+% Assignment 1.1
 %{
 Obtain the symbolic expression of a polynomial that envisages the following symbolic variables:
 
